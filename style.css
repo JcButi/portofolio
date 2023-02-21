@@ -1,0 +1,138 @@
+/* GENERAL */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+.blue{
+  color: rgb(73, 108, 231);
+}
+
+/* HEADER */
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(245, 245, 245, 1);
+}
+
+ul{
+  display: flex;
+}
+li{
+  margin-top: 14px;
+  margin-right: 30px;
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: blue;
+}
+
+/* PRESENTATION */
+.presentation{
+  height: 546px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.salutation{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 115px;
+  gap: 20px;
+}
+.contact_btn{
+  margin-top: 23px;
+  width: 192px;
+  height: 54px;
+  color: white;
+  background-color: rgb(73, 108, 231);
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.photo{
+  background-image: url("images/pablo3.jpg");
+  background-size:auto;
+  background-position: center;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+}
+.icons{
+   margin-top: 43px;
+}
+.icon {
+  font-size: 1.5rem;
+  background-color:rgb(73, 108, 231);
+  color: white;
+  margin-right: 23px;
+}
+
+/* ABOUT */
+.about{
+  height: 546px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__text{
+  margin-top: 20px;
+  width: 720px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:justify;
+}
+.about h2{
+  margin-top: 32px;
+  border-bottom: 4px solid rgb(73, 108, 231);
+  padding: 14px 0;
+}
+.about__text{
+  margin-top: 95px;
+}
+.about__text h2{
+  margin-top: 32px;
+}
+.about__text h3{
+  margin-bottom: 50px;
+}
+.about__text p{
+  padding: 0 73px;
+  line-height: 30px;
+}
+/* SKILLS */
+.skills{
+  text-align: center;
+  height: 546px;
+  display: flex;
+  flex-direction: column;
+}
+.skill{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dev{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 41px;
+  place-items: center;
+}
+/* FOOTER */
+.foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(73, 108, 231);
+  color: white;
+  height: 546px;
+}
