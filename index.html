@@ -12,18 +12,18 @@
 <body>
   <header>
     <h1>Jean Claude BUTI</h1>
-    <nav>
+    <nav class="nav__menu">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Qualifications</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#qualifications" class="nav__link">Qualifications</a></li>
+        <li><a href="#contact"class="nav__link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="presentation">
+  <section class="presentation" id="home">
     <div class="salutation">
       <h1>Hi, <br>I am <span class="blue">Jean Claude</span><br>Developer Front-End</h1>
       <div><button class="contact_btn">Contact</button></div>
@@ -37,9 +37,9 @@
 
     </div>
 
-  </div>
+  </section>
 
-  <div class="about">
+  <section class="about" id="about">
     <h2 class="blue">ABOUT</h2>
     <div class="about__text">
       <h3>Je suis Jean-Claude</h3>
@@ -50,10 +50,10 @@
         autonomie et en équipe, avec un bon sens relationnel et un excellent niveau de communication en oral et écrit.
       </p>
     </div>
-  </div>
+  </section>
 
-  <div class="skills">
-    <h3 class="blue">SKILLS</h3>
+  <section class="skills" id="skills">
+    <h2 class="blue">SKILLS</h2>
 
     <div class="skill">
       <div class="frontDev">
@@ -100,25 +100,80 @@
         </div>
       </div>
     </div>
+  </section>
+  
+  <section class="qualifications" id="qualifications">
+    <h2 class="blue">QUALIFICATIONS</h2>
 
+    <div class="qualif">
+      <div class="education">
+        <div class="headEduc">
+           <img src="images/education.svg" alt="">
+        <h3 class="blue">Education</h3>
+        </div>
+        <div>
+          <h4>Licence en Informatique de Gestion</h4>
+          <p>Université Protestante au Congo, <span>KINSHASA</span><br>2017 -2019</p>
+        </div>
+         <div>
+          <h4>Graduat en Sciences Économiques</h4>
+          <p>Université Protestante au Congo, <span>KINSHASA</span><br>2017 -2019</p>
+        </div>
+      </div>
 
-  </div>
-  <div class="qualifications">
+      <div class="education">
+        <div class="headEduc">
+        <img src="images/work.svg" alt="">
+        <h3 class="blue">Work</h3>
+          </div>
+        <div>
+          <h4>Assistant Chef d’Entrepôt</h4>
+          <p>Cargo Congo Supply Chain Services, <span>LUBUMBASHI</span><br>03/2020 - 08/2020</p>
+        </div>
+        <div>
+        <h4>Formateur Jeu de société ENDELEA - RDC</h4>
+          <p>Medupen, <span>KINSHASA</span><br>10/2019 - 11/2019</p>
+      </div>
+        </div>
+    </div>
+  </section>
 
-  </div>
-  <div class="contact">
+  <section class="projects" id="projects" >
+    <h2 class="blue">PROJECTS</h2>
+    <div class="projets">
+      <img src="images/Vector<.svg" class="bouton" id="gauche" alt="">
+      <div id="carousel">
+        <div id="container">
+          
+        </div>
+      </div>
+      <img src="images/Vector>.svg" class="bouton" id="droite" alt="">
+    </div>
+  </section>
+  
+  <section class="contact" id="contact">
+    <h2 class="blue">CONTACT</h2>
+    <form action="">
+      <input type="text" placeholder="Nom">
+      <input type="text" placeholder="Email">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+      <button>Envoyer</button>
+    </form>
+  </section>
 
-  </div>
+  
   <footer>
     <div class="foot">
       <h3>Jean Claude</h3>
-      <div class="icons">
+      <div class="icons__foot">
         <a href="" class="icon"><i class='bx bxl-facebook'></i></a>
         <a href="" class="icon"><i class='bx bxl-linkedin'></i></a>
         <a href="" class="icon"><i class='bx bxl-twitter'></i></a>
       </div>
+      <div class="copyright">
       <img src="images/Group.svg" alt="">
       <p>2023 copyright all reserved</p>
+        </div>
     </div>
   </footer>
 

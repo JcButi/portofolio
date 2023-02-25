@@ -8,9 +8,20 @@
   .blue{
     color: rgb(73, 108, 231);
   }
+section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+body{
+  width: 100%;
+}
   
   /* HEADER */
   header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
@@ -31,9 +42,30 @@
     text-decoration: none;
     color: black;
   }
-  a:hover{
-    color: blue;
-  }
+.nav__link:hover {
+  position: relative;
+}
+.nav__link:hover::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: rgb(73, 108, 231);
+}
+.nav__link {
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: rgb(73, 108, 231);
+}
   
   /* PRESENTATION */
   .presentation{
@@ -86,8 +118,8 @@
     margin-top: 20px;
     width: 720px;
     height: 382px;
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
     align-items: center;
     text-align:justify;
   }
@@ -111,28 +143,171 @@
   }
   /* SKILLS */
   .skills{
-    text-align: center;
     height: 546px;
     display: flex;
     flex-direction: column;
   }
+.skills h2{
+   margin: 32px auto;
+    border-bottom: 4px solid rgb(73, 108, 231);
+    padding: 14px 0;
+}
   .skill{
+    margin-top: 20px;
+    margin-bottom: 44px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
   .dev{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 41px;
-    place-items: center;
   }
+/* QUALIFICATION */
+ .qualifications{
+    height: 546px;
+    display: flex;
+    flex-direction: column;
+  }
+.qualifications h2{
+    margin: 32px auto;
+    border-bottom: 4px solid rgb(73, 108, 231);
+    padding: 14px 0;
+}
+.qualifications span{
+  font-weight: bold;
+}
+.qualifications h4{
+  font-size: 20px;
+}
+.qualif{
+  display: flex;
+  justify-content: space-around;
+}
+.education{
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  line-height: 30px;
+}
+.headEduc{
+  display: flex;
+  margin: auto
+}
+/* PROJECTS */
+.projects{
+  height: 546px;
+  display:flex;
+  flex-direction: column;
+}
+.projects h2{
+    margin: 32px auto;
+    border-bottom: 4px solid rgb(73, 108, 231);
+    padding: 14px 0;
+}
+.projets{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 58px;
+}
+#carousel{
+    width: 720px;
+    height: 407px;
+    border: solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+#container{
+    width: 720px;
+    height: 407px;
+}
+.photos{
+    width: 720px;
+    height: 407px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+}
+.bouton{
+    width: 70px;
+    cursor: pointer;
+}
+#gauche{
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+#droite{
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+#gauche:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+#droite:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* CONTACT */
+.contact{
+  height: 546px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2{
+    margin-top: 26px;
+    border-bottom: 4px solid rgb(73, 108, 231);
+    padding: 14px 0;
+  }
+.contact form{
+  display: flex;
+  flex-direction: column;
+   margin-top: 38.5px;
+  margin-bottom: 18.5px;
+  gap: 30px;
+  width:289px;
+}
+form input{
+  height: 38px;
+  border-radius: 7px;
+}
+form textarea{
+  height: 146px;
+  border-radius: 7px;
+}
+form button{
+  background-color:  rgb(73, 108, 231);
+  color: white;
+  width: 102px;
+  height: 35px;
+  margin: 23px auto;
+  border-radius: 7px;
+}
   /* FOOTER */
+footer{
+  background-color: rgb(73, 108, 231);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
   .foot{
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(73, 108, 231);
     color: white;
-    height: 546px;
+    height: 243px;
+    width: 537px;
+    gap: 26px;
   }
+.copyright{
+  display: flex;
+}
