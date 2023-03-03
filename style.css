@@ -9,13 +9,8 @@
     color: rgb(73, 108, 231);
   }
 section {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding: 0 50px;
 }
-body{
-  width: 100%;
-}
-  
   /* HEADER */
   header{
     position: fixed;
@@ -74,6 +69,8 @@ body{
     grid-template-columns: 1fr 1fr;
   }
   .salutation{
+    margin-top: 100px;
+    margin-left: 100px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -91,6 +88,8 @@ body{
     font-weight: bold;
   }
   .photo{
+    margin-top: 100px;
+    margin-right: 100px;
     background-image: url("images/pablo3.jpg");
     background-size:auto;
     background-position: center;
@@ -255,6 +254,21 @@ body{
 }
 
 /* CONTACT */
+.coordonnees_contact{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+}
+.coordonnees{
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-top: 38.5px;
+  margin-bottom: 18.5px;
+}
+.contact_item{
+  display: flex;
+}
 .contact{
   height: 546px;
   display: flex;
@@ -310,4 +324,30 @@ footer{
   }
 .copyright{
   display: flex;
+}
+
+@media screen and (max-width:995px){
+.skills, .qualifications{
+  height: 909px;
+}
+  .skill{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+   .qualif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .coordonnees{
+    display: none;
+}
+  .coordonnees_contact{
+  display: flex;
+  justify-content:center;
+    align-items: center;
+}
+  
 }
